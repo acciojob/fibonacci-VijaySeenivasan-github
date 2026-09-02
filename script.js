@@ -12,7 +12,7 @@ function fibonacci(num) {
         second = next;
     }
 
-    return second;
+    return Number(second);
 }
 
 module.exports = fibonacci;
