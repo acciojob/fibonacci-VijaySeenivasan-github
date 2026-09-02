@@ -6,7 +6,7 @@ function fibonacci(num) {
 
     let first = 0;
     let second = 1;
-	let result = 0;
+	let result ;
 
 	for (let index = 2; index < num; index++) {
 		result = first+ second;
@@ -15,6 +15,7 @@ function fibonacci(num) {
 	}
 
     return result;
+
 }
 
 module.exports = fibonacci;
