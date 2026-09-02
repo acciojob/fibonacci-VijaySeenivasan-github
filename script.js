@@ -14,7 +14,7 @@ function fibonacci(num) {
 		second = result;
 	}
 
-    return result
+    return result;
 }
 
 module.exports = fibonacci;
