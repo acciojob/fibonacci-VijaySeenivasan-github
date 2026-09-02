@@ -6,15 +6,18 @@ function fibonacci(num) {
 
     let first = 0;
     let second = 1;
-	let result ;
 
-	for (let index = 2; index < num; index++) {
-		result = first+ second;
-		first = second;
-		second = result;
-	}
+    if (num === 1) {
+        return first;
+    }
 
-    return result;
+    for (let i = 3; i <= num; i++) {
+        const next = first + second;
+        first = second;
+        second = next;
+    }
+
+    return second;
 
 }
 
